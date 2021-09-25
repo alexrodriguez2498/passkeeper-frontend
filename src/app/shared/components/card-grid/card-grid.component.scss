@@ -1,0 +1,28 @@
+.pk-card {
+  max-width: 350px;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.image-wrapper {
+  text-align: center;
+}
+
+.card-image {
+  max-height: 100px;
+  object-fit: contain;
+  min-width: 300px;
+  padding: 1rem;
+}
+
+.card-description {
+  color: gray;
+}
+
+.category-label {
+  font-size: 10px;
+}

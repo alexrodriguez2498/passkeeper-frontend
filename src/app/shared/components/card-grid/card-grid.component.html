@@ -1,0 +1,46 @@
+<div class="row">
+    <div class="col-12 col-md-6 col-lg-4 col-xxl-3  my-4 justify-content-sm-center d-flex" *ngFor="let card of arrData">
+        <mat-card class="pk-card mat-elevation-z8">
+            <figure class="image-wrapper">
+<!--                <img mat-card-image src="assets/app-logos/logo-Google.png" class="card-image" alt="Photo of an item">-->
+                <img mat-card-image [src]="card.img ? card.image : catchImage(card)" class="card-image" alt="">
+            </figure>
+            <mat-card-content>
+                <div class="d-flex align-items-center">
+                    <mat-icon>
+                        {{
+                        card.label === 'password' ? 'lock'
+                            : card.label === 'note' ? 'description'
+                            : card.label === 'address' ? 'contacts'
+                                : card.label === 'payment-card' ? 'credit_card'
+                                    : card.label === 'bank-account' ? 'account_balance'
+                                        : card.label === 'passport-document' ? 'account_box'
+                                            : card.label === 'messaging-app' ? 'chat'
+                                                : card.label === '' ? 'warning' : null
+                        }}
+                    </mat-icon>
+                    <h3>{{card.title | maxLength: 'cardTitle' | titleCase}}</h3>
+                </div>
+                <mat-chip-list *ngIf="(card.label !== '' && card.label !== null && card.label !== undefined) && isHereHome">
+                    <mat-chip class="category-label" [routerLink]="card.label">{{card.label | titleCase}}</mat-chip>
+                </mat-chip-list>
+                <p class="card-description">{{ catchLabel(card) | maxLength : 'cardText' }}</p>
+            </mat-card-content>
+            <mat-card-actions class="card-actions">
+                <button mat-icon-button matTooltip="Edit Item">
+                    <mat-icon>edit</mat-icon>
+                </button>
+                <button mat-icon-button matTooltip="Share Item with Someone">
+                    <mat-icon>people</mat-icon>
+                </button>
+                <button mat-icon-button matTooltip="Delete Item">
+                    <mat-icon>delete</mat-icon>
+                </button>
+                <button mat-icon-button matTooltip="Launch App">
+                    <mat-icon>launch</mat-icon>
+                </button>
+            </mat-card-actions>
+        </mat-card>
+
+    </div>
+</div>
