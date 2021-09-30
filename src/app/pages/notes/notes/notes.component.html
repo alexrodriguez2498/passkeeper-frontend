@@ -1,6 +1,13 @@
 <div class="pk-section">
-    <app-card-grid [arrData]="dummyData"></app-card-grid>
-    <button mat-fab class="pk-add-button">
+    <div *ngIf="dummyData !== []">
+        <app-card-grid [arrData]="dummyData"></app-card-grid>
+    </div>
+    <button
+            mat-fab
+            [matBadge]="dummyData === [] ? '!' : ''"
+            [matTooltip]="dummyData === [] ? 'Create a new item!' : ''"
+            matBadgeColor="warn"
+            class="pk-add-button">
         <mat-icon>add</mat-icon>
     </button>
 </div>

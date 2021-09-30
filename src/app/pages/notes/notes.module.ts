@@ -5,6 +5,8 @@ import {RouterModule} from '@angular/router';
 import {SharedModule} from '../../shared/shared.module';
 import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
+import {MatBadgeModule} from '@angular/material/badge';
+import {MatTooltipModule} from '@angular/material/tooltip';
 
 
 
@@ -17,7 +19,9 @@ import {MatIconModule} from '@angular/material/icon';
         ]),
         SharedModule,
         MatButtonModule,
-        MatIconModule
+        MatIconModule,
+        MatBadgeModule,
+        MatTooltipModule
     ]
 })
 export class NotesModule { }

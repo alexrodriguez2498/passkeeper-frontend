@@ -5,6 +5,8 @@ import { RouterModule } from '@angular/router';
 import {SharedModule} from '../../shared/shared.module';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
+import {MatBadgeModule} from '@angular/material/badge';
+import {MatTooltipModule} from '@angular/material/tooltip';
 
 
 @NgModule({
@@ -16,7 +18,9 @@ import {MatButtonModule} from '@angular/material/button';
         ]),
         SharedModule,
         MatIconModule,
-        MatButtonModule
+        MatButtonModule,
+        MatBadgeModule,
+        MatTooltipModule
     ]
 })
 export class AddressesModule { }
