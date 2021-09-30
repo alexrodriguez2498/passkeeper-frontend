@@ -5,6 +5,8 @@ import {RouterModule} from '@angular/router';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import {SharedModule} from '../../shared/shared.module';
+import {MatBadgeModule} from '@angular/material/badge';
+import {MatTooltipModule} from '@angular/material/tooltip';
 
 
 
@@ -17,7 +19,9 @@ import {SharedModule} from '../../shared/shared.module';
         ]),
         MatIconModule,
         MatButtonModule,
-        SharedModule
+        SharedModule,
+        MatBadgeModule,
+        MatTooltipModule
     ]
 })
 export class MessagingAccountsModule { }

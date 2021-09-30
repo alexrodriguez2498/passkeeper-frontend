@@ -52,4 +52,8 @@ export class CardGridComponent implements OnInit {
       return 'assets/app-logos/passport-document.png';
     }
   }
+
+  validateLaunchable(card) {
+    return card.label === ('password' || 'messaging-app') ;
+  }
 }

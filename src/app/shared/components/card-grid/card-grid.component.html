@@ -36,7 +36,7 @@
                 <button mat-icon-button matTooltip="Delete Item">
                     <mat-icon>delete</mat-icon>
                 </button>
-                <button mat-icon-button matTooltip="Launch App">
+                <button mat-icon-button matTooltip="Launch App" *ngIf="validateLaunchable(card)">
                     <mat-icon>launch</mat-icon>
                 </button>
             </mat-card-actions>
