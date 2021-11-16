@@ -20,7 +20,7 @@ export const locale = {
       PAYMENT_CARDS: 'Payment Cards',
       BANK_ACCOUNTS: 'Bank Accounts',
       PASSPORT_AND_DOCUMENTS: 'Pssport and Documents',
-      MESSAGING_APPS: 'Messaging Apps'
+      MESSAGING_APPS: 'Messaging Apps',
     },
     PREMIUM: {
       SECURITY_DASHBOARD: 'Security Dashboard',

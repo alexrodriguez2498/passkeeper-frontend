@@ -273,7 +273,7 @@
               aria-haspopup="true"
               routerLinkActive="menu-item-active"
       >
-        <a class="menu-link" routerLink="/advanced-options" routerLinkActive="active">
+        <a class="menu-link" (click)="goToAdvancedOptions()">
           <span
                   [inlineSVG]="'./assets/media/svg/icons/Design/Layers.svg'"
                   cacheSVG="true"
@@ -288,7 +288,7 @@
               aria-haspopup="true"
               routerLinkActive="menu-item-active"
       >
-        <a class="menu-link" routerLink="/help" routerLinkActive="active">
+        <a class="menu-link" (click)="goToHelp()">
           <span
                   [inlineSVG]="'./assets/media/svg/icons/Design/Layers.svg'"
                   cacheSVG="true"

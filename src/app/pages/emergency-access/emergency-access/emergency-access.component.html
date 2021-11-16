@@ -1,0 +1,71 @@
+<div class="pk-section">
+    <div class="card card-stretch gutter-b">
+        <mat-tab-group>
+            <mat-tab label="People I Trust">
+                <div class="box">
+                    <h1>People I Trust</h1>
+                    <p>Give someone you trust access to your vault. When your trusted contact requests
+                        Emergency Access, you can decline their request within the specified waiting period.
+                        Otherwise, your vault is added to their LastPass account.</p>
+                    <mat-accordion class="example-headers-align" multi>
+                        <mat-expansion-panel>
+                            <mat-expansion-panel-header>
+                                <mat-panel-title>
+                                    <span style="color: red;">Pending (1)</span>
+                                </mat-panel-title>
+                            </mat-expansion-panel-header>
+
+                            <div class="panel-wrapper">
+                                <div class="panel">
+                                    <figure class="panel-image-wrapper">
+                                        <img src="assets/app-logos/user-shape.png" alt="">
+                                    </figure>
+                                    <div class="description">
+                                        <p>alexcarvajal2404@gmail.com</p>
+                                    </div>
+                                    <div class="shared-with">
+                                        <h5>Waiting period</h5>
+                                        <p>6 hours</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <button mat-icon-button [matMenuTriggerFor]="menu"
+                                            aria-label="Example icon-button with a menu">
+                                        <mat-icon>more_vert</mat-icon>
+                                    </button>
+                                    <mat-menu #menu="matMenu">
+                                        <button mat-menu-item>
+                                            <mat-icon>edit</mat-icon>
+                                            <span>Edit</span>
+                                        </button>
+                                        <button mat-menu-item>
+                                            <mat-icon>repeat</mat-icon>
+                                            <span>Resend invitation</span>
+                                        </button>
+                                        <button mat-menu-item>
+                                            <mat-icon>cancel</mat-icon>
+                                            <span>Cancel invitation</span>
+                                        </button>
+                                    </mat-menu>
+                                </div>
+                            </div>
+
+                        </mat-expansion-panel>
+                    </mat-accordion>
+                </div>
+            </mat-tab>
+            <mat-tab label="People Who Trust Me">
+                <div class="box">
+                    <h1>People Who Trust Me</h1>
+                </div>
+            </mat-tab>
+        </mat-tab-group>
+
+    </div>
+    <button
+            mat-fab
+            class="pk-add-button">
+        <mat-icon>add</mat-icon>
+    </button>
+</div>
+

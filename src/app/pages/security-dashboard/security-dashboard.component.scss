@@ -1,0 +1,30 @@
+.link {
+  margin: 1rem 0;
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  &:hover {
+    background-color: #eaeaea;
+    .hover-text {
+      display: block;
+    }
+  }
+}
+
+.hover-text {
+  display: none;
+  padding: 0 2rem;
+  color: #0BB7AF;
+  &:hover {
+    color: black;
+    cursor: pointer;
+  }
+}
+
+.main-color {
+  background-color: #0BB7AF;
+  color: white;
+  &:hover {
+    background-color: #0A9B95;
+  }
+}

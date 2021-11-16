@@ -1,0 +1,56 @@
+<section>
+    <div class="row">
+        <div class="col-12 col-md-8">
+            <app-mixed-widget14></app-mixed-widget14>
+            <div class="card  card-stretch gutter-b">
+                <div class="card-header border-0 pt-5">
+                    <h1>Dark web monitoring</h1>
+                    <p>
+                        Cyber-crime is real. Don't be a victim. With dark web monitoring you'll be proactively alerted
+                        if
+                        sites from your vault are breached. Monitor there addresses all day, every day. <a href="#">Learn
+                        more</a>
+                    </p>
+                    <mat-divider class="my-4"></mat-divider>
+                </div>
+                <div class="card-body">
+                    <ul style="list-style-type: none">
+                        <li class="link" *ngFor="let link of exampleLinks">
+                            {{link.text}}
+                            <span class="hover-text">Remove from monitoring</span>
+                        </li>
+                    </ul>
+                    <div class="text-center">
+                        <button class="btn btn-block main-color my-5"> Start monitoring</button>
+                        <small class="pt-3">
+                            By clicking “Start Monitoring”, you agree to share your monitored usernames or addresses
+                            with Enzoic to help protect your credentials. <a href="#"> Learn more about how Enzoic
+                            protects you</a>
+                        </small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-4">
+            <div class="card card-stretch gutter-b">
+                <div class="card-header border-0 pb-0">
+                    <div class="d-flex">
+                        <div>
+                            <mat-icon>lock</mat-icon>
+                        </div>
+                        <div>
+                            <h3>Master password alert</h3>
+                            <p>16 de noviembre de 2021</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <p>Master password strength</p>
+                    <p><b>Weak (50%)</b></p>
+                    <br>
+                    <p>For your protectionc, change your master password inmediatly!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

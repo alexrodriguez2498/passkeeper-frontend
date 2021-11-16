@@ -115,3 +115,47 @@
   bottom: 10%;
   right: 5%;
 }
+
+.custom-modal {
+
+  .modal-dialog {
+    min-height: 730px;
+    min-width: 920px;
+  }
+
+  .modal-content {
+    background-color: whitesmoke;
+    border-radius: 15px;
+    display: block;
+    // height: fit-content;
+    height: 100%;
+    min-height: 730px;
+    min-width: 920px;
+    position: relative;
+    padding: 8px;
+
+    .benefit-form-content {
+      min-height: 100%;
+    }
+  }
+}
+
+.custom-thin-modal {
+
+  .modal-dialog {
+    min-height: 730px;
+    width: 400px;
+  }
+
+  .modal-content {
+    background-color: whitesmoke;
+    border-radius: 15px;
+    display: block;
+    // height: fit-content;
+    height: 100%;
+    min-height: 730px;
+    //min-width: 920px;
+    position: relative;
+    padding: 8px;
+  }
+}

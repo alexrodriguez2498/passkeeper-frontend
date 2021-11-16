@@ -100,6 +100,27 @@ const routes: Routes = [
           ),
       },
       {
+        path: 'security-dashboard',
+        loadChildren: () =>
+            import ('./security-dashboard/security-dashboard.module').then(
+                (m) => m.SecurityDashboardModule
+            )
+      },
+      {
+        path: 'sharing-center',
+        loadChildren: () =>
+            import ('./sharing-center/sharing-center.module').then(
+                (m) => m.SharingCenterModule
+            )
+      },
+      {
+        path: 'emergency-access',
+        loadChildren: () =>
+            import ('./emergency-access/emergency-access.module').then(
+                (m) => m.EmergencyAccessModule
+            )
+      },
+      {
         path: '',
         redirectTo: '/home',
         pathMatch: 'full',

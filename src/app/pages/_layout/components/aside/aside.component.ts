@@ -1,6 +1,9 @@
 import { Location } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { LayoutService } from '../../../../_metronic/core';
+import {NgbModal} from '@ng-bootstrap/ng-bootstrap';
+import {ShowHelpComponent} from '../../../../shared/alerts/show-help/show-help.component';
+import {AdvancedOptionsComponent} from '../../../../shared/alerts/advanced-options/advanced-options.component';
 
 @Component({
   selector: 'app-aside',
@@ -20,7 +23,11 @@ export class AsideComponent implements OnInit {
   asideMenuScroll = 1;
   asideSelfMinimizeToggle = false;
 
-  constructor(private layout: LayoutService, private loc: Location) { }
+  constructor(
+      private layout: LayoutService,
+      private loc: Location,
+      private serviceModal: NgbModal
+  ) { }
 
   ngOnInit(): void {
     // load view settings
@@ -48,5 +55,19 @@ export class AsideComponent implements OnInit {
     } else {
       return './assets/media/logos/logo-light.png';
     }
+  }
+
+    goToHelp() {
+      const modal = this.serviceModal.open(ShowHelpComponent, {
+        centered: true,
+        windowClass: 'custom-thin-modal d-flex flex-column w-100 justify-content-center'
+      });
+    }
+
+  goToAdvancedOptions() {
+    const modal = this.serviceModal.open(AdvancedOptionsComponent, {
+      centered: true,
+      windowClass: 'custom-thin-modal d-flex flex-column w-100 justify-content-center'
+    });
   }
 }

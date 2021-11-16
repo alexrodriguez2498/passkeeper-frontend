@@ -46,6 +46,9 @@ import { DropdownMenusModule } from '../dropdown-menus/dropdown-menus.module';
 import { NgbDropdownModule } from '@ng-bootstrap/ng-bootstrap';
 import { Widget3DropdownComponent } from './lists/lists-widget3/widget3-dropdown/widget3-dropdown.component';
 import { Widget4DropdownComponent } from './lists/lists-widget4/widget4-dropdown/widget4-dropdown.component';
+import {MatIconModule} from '@angular/material/icon';
+import {MatTooltipModule} from '@angular/material/tooltip';
+import {MatDividerModule} from '@angular/material/divider';
 
 
 @NgModule({
@@ -99,6 +102,9 @@ import { Widget4DropdownComponent } from './lists/lists-widget4/widget4-dropdown
     InlineSVGModule,
     NgApexchartsModule,
     NgbDropdownModule,
+    MatIconModule,
+    MatTooltipModule,
+    MatDividerModule,
   ],
   exports: [
     // Advanced Tables
