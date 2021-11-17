@@ -1,0 +1,78 @@
+<div class="pk-section">
+    <div class="card card-stretch gutter-b">
+        <mat-tab-group>
+            <mat-tab label="Manage Shared Folder">
+                <div class="box">
+                    <h1>Shared Folders</h1>
+                    <mat-accordion class="example-headers-align" multi>
+                        <mat-expansion-panel>
+                            <mat-expansion-panel-header>
+                                <mat-panel-title>
+                                    <span style="color: red;">Pending (1)</span>
+                                </mat-panel-title>
+                            </mat-expansion-panel-header>
+
+                            <div class="panel-wrapper">
+                                <div class="panel">
+                                    <figure class="panel-image-wrapper">
+                                        <img src="assets/app-logos/logo-Google.png" alt="">
+                                    </figure>
+                                    <div class="description">
+                                        <h5>Amazon</h5>
+                                        <p>alexcarvajal2404@gmail.com</p>
+                                    </div>
+                                    <div class="shared-with">
+                                        <h5>Shared with</h5>
+                                        <p>luiscarvajal2693@gmail.com</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <button mat-icon-button [matMenuTriggerFor]="menu"
+                                            aria-label="Example icon-button with a menu">
+                                        <mat-icon>more_vert</mat-icon>
+                                    </button>
+                                    <mat-menu #menu="matMenu">
+                                        <button mat-menu-item>
+                                            <mat-icon>edit</mat-icon>
+                                            <span>Edit</span>
+                                        </button>
+                                        <button mat-menu-item>
+                                            <mat-icon>share</mat-icon>
+                                            <span>Share </span>
+                                        </button>
+                                        <button mat-menu-item>
+                                            <mat-icon>repeat</mat-icon>
+                                            <span>Resend invitation</span>
+                                        </button>
+                                        <button mat-menu-item>
+                                            <mat-icon>cancel</mat-icon>
+                                            <span>Cancel invitation</span>
+                                        </button>
+                                    </mat-menu>
+                                </div>
+                            </div>
+
+                        </mat-expansion-panel>
+                    </mat-accordion>
+                </div>
+            </mat-tab>
+            <mat-tab label="Shared with Others">
+                <div class="box">
+                    <h1>Shared with Others</h1>
+                </div>
+            </mat-tab>
+            <mat-tab label="Shared with 'Me">
+                <div class="box">
+                    hello
+                </div>
+            </mat-tab>
+        </mat-tab-group>
+
+    </div>
+    <button
+            mat-fab
+            class="pk-add-button">
+        <mat-icon>add</mat-icon>
+    </button>
+</div>
+

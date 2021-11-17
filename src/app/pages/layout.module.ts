@@ -21,6 +21,10 @@ import { CoreModule } from '../_metronic/core';
 import { SubheaderModule } from '../_metronic/partials/layout/subheader/subheader.module';
 import { AsideDynamicComponent } from './_layout/components/aside-dynamic/aside-dynamic.component';
 import { HeaderMenuDynamicComponent } from './_layout/components/header/header-menu-dynamic/header-menu-dynamic.component';
+import { SecurityDashboardComponent } from './security-dashboard/security-dashboard.component';
+import {WidgetsModule} from '../_metronic/partials/content/widgets/widgets.module';
+import {MatDividerModule} from '@angular/material/divider';
+import {MatIconModule} from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -35,6 +39,7 @@ import { HeaderMenuDynamicComponent } from './_layout/components/header/header-m
     LanguageSelectorComponent,
     AsideDynamicComponent,
     HeaderMenuDynamicComponent,
+    SecurityDashboardComponent,
   ],
   imports: [
     CommonModule,
@@ -46,6 +51,9 @@ import { HeaderMenuDynamicComponent } from './_layout/components/header/header-m
     NgbProgressbarModule,
     CoreModule,
     SubheaderModule,
+    WidgetsModule,
+    MatDividerModule,
+    MatIconModule,
   ],
 })
 export class LayoutModule { }

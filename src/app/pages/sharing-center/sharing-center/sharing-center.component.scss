@@ -1,0 +1,25 @@
+.box {
+  min-height: 50vh;
+  padding: 2rem;
+}
+
+.panel-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.panel-image-wrapper {
+  & img {
+    width: 150px;
+    height: 100px;object-fit: contain;
+  }
+}
+
+.panel {
+  display: flex;
+  align-items: center;
+}
+
+.panel, .shared-with, .description {
+  margin: 0 4rem;
+}
