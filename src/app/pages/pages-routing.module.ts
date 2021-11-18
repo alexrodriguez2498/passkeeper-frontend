@@ -72,7 +72,7 @@ const routes: Routes = [
           ),
       },
       {
-        path: 'user-profile',
+        path: 'account-settings',
         loadChildren: () =>
           import('../modules/user-profile/user-profile.module').then(
             (m) => m.UserProfileModule

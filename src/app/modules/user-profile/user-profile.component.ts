@@ -13,9 +13,9 @@ export class UserProfileComponent implements OnInit {
     setTimeout(() => {
       this.subheader.setTitle('User Profile');
       this.subheader.setBreadcrumbs([{
-        title: 'User profile',
-        linkText: 'User profile',
-        linkPath: '/user-profile'
+        title: 'Account Information',
+        linkText: 'General Information',
+        linkPath: '/account-settings'
       }]);
     }, 1);
   }

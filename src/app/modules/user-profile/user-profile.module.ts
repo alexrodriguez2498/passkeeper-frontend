@@ -18,6 +18,9 @@ import {TaxInformationComponent} from './tax-information/tax-information.compone
 import {StatementsComponent} from './statements/statements.component';
 import {UserProfileRoutingModule} from './user-profile-routing.module';
 import {ProfileCardComponent} from './_components/profile-card/profile-card.component';
+import { MultifactorOptionsComponent } from './multifactor-options/multifactor-options.component';
+import { TrustedDevicesComponent } from './trusted-devices/trusted-devices.component';
+import { MobileDevicesComponent } from './mobile-devices/mobile-devices.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +33,10 @@ import {ProfileCardComponent} from './_components/profile-card/profile-card.comp
     SavedCreditCardsComponent,
     TaxInformationComponent,
     StatementsComponent,
-    ProfileCardComponent
+    ProfileCardComponent,
+    MultifactorOptionsComponent,
+    TrustedDevicesComponent,
+    MobileDevicesComponent
   ],
   imports: [
     CommonModule,

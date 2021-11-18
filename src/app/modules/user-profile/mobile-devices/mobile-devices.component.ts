@@ -5,11 +5,11 @@ import { first } from 'rxjs/operators';
 import { AuthService, UserModel } from '../../auth';
 
 @Component({
-  selector: 'app-account-information',
-  templateUrl: './account-information.component.html',
-  styleUrls: ['./account-information.component.scss']
+  selector: 'app-mobile-devices',
+  templateUrl: './mobile-devices.component.html',
+  styleUrls: ['./mobile-devices.component.scss']
 })
-export class AccountInformationComponent implements OnInit, OnDestroy {
+export class MobileDevicesComponent   implements OnInit, OnDestroy {
   generalSettingsForm: FormGroup;
   user: UserModel;
   firstUserState: UserModel;
@@ -22,7 +22,7 @@ export class AccountInformationComponent implements OnInit, OnDestroy {
 
   ngOnInit(): void {
     const sb = this.userService.currentUserSubject.asObservable().pipe(
-      first(user => !!user)
+        first(user => !!user)
     ).subscribe(user => {
       this.user = Object.assign({}, user);
       this.firstUserState = Object.assign({}, user);

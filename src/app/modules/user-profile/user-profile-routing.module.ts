@@ -9,6 +9,9 @@ import { SavedCreditCardsComponent } from './saved-credit-cards/saved-credit-car
 import { StatementsComponent } from './statements/statements.component';
 import { TaxInformationComponent } from './tax-information/tax-information.component';
 import { UserProfileComponent } from './user-profile.component';
+import {MultifactorOptionsComponent} from './multifactor-options/multifactor-options.component';
+import {TrustedDevicesComponent} from './trusted-devices/trusted-devices.component';
+import {MobileDevicesComponent} from './mobile-devices/mobile-devices.component';
 
 const routes: Routes = [
   {
@@ -16,8 +19,20 @@ const routes: Routes = [
     component: UserProfileComponent,
     children: [
       {
-        path: 'profile-overview',
+        path: 'general-settings',
         component: ProfileOverviewComponent,
+      },
+      {
+        path: 'multifactor-options',
+        component: MultifactorOptionsComponent
+      },
+      {
+        path: 'trusted-devices',
+        component: TrustedDevicesComponent
+      },
+      {
+        path: 'mobile-devices',
+        component: MobileDevicesComponent
       },
       {
         path: 'personal-information',
@@ -47,8 +62,8 @@ const routes: Routes = [
         path: 'statements',
         component: StatementsComponent
       },
-      { path: '', redirectTo: 'profile-overview', pathMatch: 'full' },
-      { path: '**', redirectTo: 'profile-overview', pathMatch: 'full' },
+      { path: '', redirectTo: 'general-settings', pathMatch: 'full' },
+      { path: '**', redirectTo: 'general-settings', pathMatch: 'full' },
     ],
   },
 ];

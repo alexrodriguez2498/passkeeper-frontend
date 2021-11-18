@@ -26,9 +26,11 @@ export const locale = {
       SECURITY_DASHBOARD: 'Tablero de Seguridad',
       SHARING_CENTER: 'Centro Compartido',
       EMERGENCY_ACCESS: 'Acceso de Emergencia',
-      ACCOUNT_SETTINGS: 'Configuracion',
+    },
+    GENERAL: {
+      HELP: 'Ayuda',
+      ACCOUNT_SETTINGS: 'Configuracion de Cuenta',
       ADVANCED_OPTIONS: 'Opciones Avanzadas',
-      HELP: 'Ayuda'
     },
     AUTH: {
       GENERAL: {
