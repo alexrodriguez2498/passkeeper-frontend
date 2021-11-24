@@ -7,7 +7,7 @@
             </figure>
             <mat-card-content>
                 <div class="d-flex align-items-center">
-                    <mat-icon>
+                    <mat-icon class="category-icon">
                         {{
                         card.label === 'password' ? 'lock'
                             : card.label === 'note' ? 'description'
@@ -27,16 +27,16 @@
                 <p class="card-description">{{ catchLabel(card) | maxLength : 'cardText' }}</p>
             </mat-card-content>
             <mat-card-actions class="card-actions">
-                <button mat-icon-button matTooltip="Edit Item">
+                <button  class="category-icon" mat-icon-button matTooltip="Edit Item" (click)="editCard(card)">
                     <mat-icon>edit</mat-icon>
                 </button>
-                <button mat-icon-button matTooltip="Share Item with Someone">
+                <button  class="category-icon" mat-icon-button matTooltip="Share Item with Someone" (click)="shareCard(card)">
                     <mat-icon>people</mat-icon>
                 </button>
-                <button mat-icon-button matTooltip="Delete Item">
+                <button  class="category-icon" mat-icon-button matTooltip="Delete Item" (click)="deleteCard(card)">
                     <mat-icon>delete</mat-icon>
                 </button>
-                <button mat-icon-button matTooltip="Launch App" *ngIf="validateLaunchable(card)">
+                <button  class="category-icon" mat-icon-button matTooltip="Launch App" *ngIf="validateLaunchable(card)">
                     <mat-icon>launch</mat-icon>
                 </button>
             </mat-card-actions>

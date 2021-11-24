@@ -26,3 +26,9 @@
 .category-label {
   font-size: 10px;
 }
+
+.category-icon {
+  &:hover {
+    color: #0BB7AF;
+  }
+}

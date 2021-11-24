@@ -133,10 +133,6 @@
     min-width: 920px;
     position: relative;
     padding: 8px;
-
-    .benefit-form-content {
-      min-height: 100%;
-    }
   }
 }
 
@@ -159,3 +155,61 @@
     padding: 8px;
   }
 }
+
+.custom-short-modal {
+
+  .modal-dialog {
+    min-height: 300px;
+    min-width: 500px;
+  }
+
+  .modal-content {
+    background-color: whitesmoke;
+    border-radius: 15px;
+    display: block;
+    // height: fit-content;
+    height: 100%;
+    position: relative;
+    padding: 8px;
+    min-height: 300px;
+    min-width: 500px;
+  }
+}
+
+// cards
+
+.pk-card {
+  max-width: 350px;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.image-wrapper {
+  text-align: center;
+}
+
+.card-image {
+  max-height: 100px;
+  object-fit: contain;
+  min-width: 300px;
+  padding: 1rem;
+}
+
+.card-description {
+  color: gray;
+}
+
+.category-label {
+  font-size: 10px;
+}
+
+.category-icon {
+  &:hover {
+    color: #0BB7AF;
+  }
+}
+

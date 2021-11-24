@@ -1,0 +1,22 @@
+.submit-button {
+
+  & button {
+    margin-top: 5rem;
+    width: 100%;
+    background-color: #0BB7AF;
+    color: white;
+    &:disabled  {
+      background-color: lightgray;
+      color: gray;
+    }
+  }
+}
+
+.check {
+  margin-top: 0.5rem;
+}
+
+.relative-form {
+  height: 100%;
+  padding: 2rem;
+}

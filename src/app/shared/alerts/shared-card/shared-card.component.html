@@ -1,0 +1,15 @@
+<form [formGroup]="emailForm" class="relative-form">
+    <h1 class="text-center mb-5">Share Password</h1>
+    <mat-form-field appearance="outline" class="w-100">
+        <mat-label>Recipient Email</mat-label>
+        <input matInput formControlName="email">
+        <mat-icon matSuffix>person</mat-icon>
+        <mat-error *ngIf="emailForm.get('email').invalid">{{getErrorMessage()}}</mat-error>
+    </mat-form-field>
+    <mat-checkbox formControlName="sharePassword" class="check">Allow Recipient to view password</mat-checkbox>
+    <div class="submit-button">
+        <button mat-flat-button type="button"
+                (click)="sendData()"
+                [disabled]="emailForm.invalid">Share</button>
+    </div>
+</form>

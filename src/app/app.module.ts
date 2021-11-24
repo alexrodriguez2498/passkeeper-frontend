@@ -16,6 +16,8 @@ import { HighlightModule, HIGHLIGHT_OPTIONS } from 'ngx-highlightjs';
 import { SplashScreenModule } from './_metronic/partials/layout/splash-screen/splash-screen.module';
 // #fake-start#
 import { FakeAPIService } from './_fake/fake-api.service';
+import {SweetAlert2Module} from '@sweetalert2/ngx-sweetalert2';
+import {ReactiveFormsModule} from '@angular/forms';
 // #fake-end#
 
 function appInitializer(authService: AuthService) {
@@ -37,6 +39,8 @@ function appInitializer(authService: AuthService) {
     HttpClientModule,
     HighlightModule,
     ClipboardModule,
+      ReactiveFormsModule,
+    SweetAlert2Module,
     // #fake-start#
     environment.isMockEnabled
       ? HttpClientInMemoryWebApiModule.forRoot(FakeAPIService, {
