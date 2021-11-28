@@ -14,6 +14,7 @@ export class BankAccountsComponent implements OnInit {
       user: 'someExample@gmail.com',
       expiredDate: '06-2025',
       cardNumber: '1234 1234 1234 1234',
+      type: 5,
     },
     {
       title: 'Grocery shopping list',
@@ -22,6 +23,7 @@ export class BankAccountsComponent implements OnInit {
       user: 'someExample@gmail.com',
       expiredDate: '06-2025',
       cardNumber: '1234 1234 1234 1234',
+      type: 5,
     },
     {
       title: 'Juanita\'s Direction',
@@ -31,6 +33,7 @@ export class BankAccountsComponent implements OnInit {
       user: 'someExample@gmail.com',
       expiredDate: '06-2025',
       cardNumber: '1234 1234 1234 1234',
+      type: 5,
     },
     {
       title: 'Visa US',
@@ -38,6 +41,7 @@ export class BankAccountsComponent implements OnInit {
       label: 'payment-card',
       expiredDate: '06-2025',
       cardNumber: '1234 1234 1234 1234',
+      type: 5,
       user: 'someExample@gmail.com'
     },
     {
@@ -48,6 +52,7 @@ export class BankAccountsComponent implements OnInit {
       user: 'someExample@gmail.com',
       expiredDate: '06-2025',
       cardNumber: '1234 1234 1234 1234',
+      type: 5,
     },
     {
       title: 'pedidos ya account',
@@ -56,6 +61,7 @@ export class BankAccountsComponent implements OnInit {
       user: 'someExample@gmail.com',
       expiredDate: '06-2025',
       cardNumber: '1234 1234 1234 1234',
+      type: 5,
     },
     {
       title: 'playstation account',
@@ -64,6 +70,7 @@ export class BankAccountsComponent implements OnInit {
       user: 'someExample@gmail.com',
       expiredDate: '06-2025',
       cardNumber: '1234 1234 1234 1234',
+      type: 5,
     },
   ];
 

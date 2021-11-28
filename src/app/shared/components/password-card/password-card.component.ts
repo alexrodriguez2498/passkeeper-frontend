@@ -18,7 +18,8 @@ export class PasswordCardComponent implements OnInit {
       private serviceModal: NgbModal,
   ) { }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+  }
 
 
   edit(card): any {
@@ -36,7 +37,9 @@ export class PasswordCardComponent implements OnInit {
         backdrop: false,
       });
       Swal.showLoading();
-      console.log('hello world');
+      setTimeout(() => {
+        Swal.fire('Edited Successfully!', '', 'success');
+      }, 2000);
     });
   }
 
@@ -58,7 +61,6 @@ export class PasswordCardComponent implements OnInit {
           backdrop: false,
         });
         Swal.showLoading();
-        console.log('hello world');
         setTimeout(() => {
           Swal.fire('Deleted!', '', 'success');
         }, 2000);

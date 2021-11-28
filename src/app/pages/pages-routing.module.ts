@@ -42,11 +42,11 @@ const routes: Routes = [
         loadChildren: () =>
             import('./passport-documents/passport-documents.module').then(m => m.PassportDocumentsModule)
       },
-      {
-        path: 'messaging-accounts',
-        loadChildren: () =>
-            import('./messaging-accounts/messaging-accounts.module').then(m => m.MessagingAccountsModule)
-      },
+      // {
+      //   path: 'messaging-accounts',
+      //   loadChildren: () =>
+      //       import('./messaging-accounts/messaging-accounts.module').then(m => m.MessagingAccountsModule)
+      // },
       {
         path: 'dashboard',
         loadChildren: () =>

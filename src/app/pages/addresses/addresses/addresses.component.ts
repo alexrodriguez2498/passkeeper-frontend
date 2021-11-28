@@ -16,6 +16,7 @@ export class AddressesComponent implements OnInit {
       user: 'someExample@gmail.com',
       expiredDate: '06-2025',
       cardNumber: '1234 1234 1234 1234',
+      type: 3,
     },
     {
       title: 'Grocery shopping list',
@@ -26,6 +27,7 @@ export class AddressesComponent implements OnInit {
       user: 'someExample@gmail.com',
       expiredDate: '06-2025',
       cardNumber: '1234 1234 1234 1234',
+      type: 3,
     },
     {
       title: 'Juanita\'s Direction',
@@ -37,6 +39,7 @@ export class AddressesComponent implements OnInit {
       user: 'someExample@gmail.com',
       expiredDate: '06-2025',
       cardNumber: '1234 1234 1234 1234',
+      type: 3,
     },
     {
       title: 'Visa US',
@@ -46,6 +49,7 @@ export class AddressesComponent implements OnInit {
       accountNumber: '1234 1234 1234',
       expiredDate: '06-2025',
       cardNumber: '1234 1234 1234 1234',
+      type: 3,
       user: 'someExample@gmail.com'
     },
     {
@@ -57,6 +61,7 @@ export class AddressesComponent implements OnInit {
       user: 'someExample@gmail.com',
       expiredDate: '06-2025',
       cardNumber: '1234 1234 1234 1234',
+      type: 3,
     },
     {
       title: 'pedidos ya account',
@@ -67,6 +72,7 @@ export class AddressesComponent implements OnInit {
       user: 'someExample@gmail.com',
       expiredDate: '06-2025',
       cardNumber: '1234 1234 1234 1234',
+      type: 3,
     },
     {
       title: 'playstation account',
@@ -77,6 +83,7 @@ export class AddressesComponent implements OnInit {
       user: 'someExample@gmail.com',
       expiredDate: '06-2025',
       cardNumber: '1234 1234 1234 1234',
+      type: 3,
     },
   ];
   constructor() { }

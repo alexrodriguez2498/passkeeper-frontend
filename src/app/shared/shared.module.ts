@@ -20,6 +20,7 @@ import { FormsModule } from '@angular/forms';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import {MatCheckboxModule} from '@angular/material/checkbox';
+import { MatExpansionModule } from '@angular/material/expansion';
 import { PasswordCardComponent } from './components/password-card/password-card.component';
 import { NotesCardComponent } from './components/notes-card/notes-card.component';
 import { AddressesCardComponent } from './components/addresses-card/addresses-card.component';
@@ -43,7 +44,8 @@ import { DocumentsCardComponent } from './components/documents-card/documents-ca
         FormsModule,
         MatFormFieldModule,
         MatCheckboxModule,
-        MatInputModule
+        MatInputModule,
+        MatExpansionModule
     ],
     exports: [
         CardGridComponent,
@@ -57,6 +59,7 @@ import { DocumentsCardComponent } from './components/documents-card/documents-ca
         PaymentCardsCardComponent,
         BankAccountsCardComponent,
         DocumentsCardComponent,
+        MatExpansionModule
     ]
 })
 export class SharedModule {

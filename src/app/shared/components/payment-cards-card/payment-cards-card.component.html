@@ -1,1 +1,32 @@
-<p>payment-cards-card works!</p>
+<div class="row">
+    <div class="col-12 col-md-6 col-lg-4 col-xxl-3  my-4 justify-content-sm-center d-flex" *ngFor="let card of arrData">
+        <mat-card class="pk-card mat-elevation-z8">
+            <figure class="image-wrapper">
+                <!--                <img mat-card-image src="assets/app-logos/logo-Google.png" class="card-image" alt="Photo of an item">-->
+                <img mat-card-image src="assets/app-logos/card.jpg" class="card-image" alt="card image">
+            </figure>
+            <mat-card-content>
+                <div class="d-flex align-items-center">
+                    <mat-icon class="category-icon">credit_card</mat-icon>
+                    <h3>{{card.title | maxLength: 'cardTitle' | titleCase}}</h3>
+                </div>
+                <p class="card-description">{{ card.user | maxLength : 'cardText' }}</p>
+            </mat-card-content>
+            <mat-card-actions class="card-actions">
+                <button  class="category-icon" mat-icon-button matTooltip="Edit Item" (click)="edit(card)">
+                    <mat-icon>edit</mat-icon>
+                </button>
+                <button  class="category-icon" mat-icon-button matTooltip="Share Item with Someone" (click)="share(card)">
+                    <mat-icon>people</mat-icon>
+                </button>
+                <button  class="category-icon" mat-icon-button matTooltip="Delete Item" (click)="delete(card)">
+                    <mat-icon>delete</mat-icon>
+                </button>
+                <button  class="category-icon" mat-icon-button matTooltip="Launch App">
+                    <mat-icon>launch</mat-icon>
+                </button>
+            </mat-card-actions>
+        </mat-card>
+
+    </div>
+</div>
