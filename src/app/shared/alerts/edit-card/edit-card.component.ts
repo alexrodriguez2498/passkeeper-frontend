@@ -10,8 +10,8 @@ import {NgbActiveModal} from '@ng-bootstrap/ng-bootstrap';
 })
 export class EditCardComponent implements OnInit, AfterViewInit {
   @Input() cardInfo: any;
-  cardType = 0;
   cardForm: FormGroup;
+  cardType: any;
 
   constructor(
       private fb: FormBuilder,
